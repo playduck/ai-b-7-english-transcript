@@ -1,0 +1,133 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'dist/transcript.blg'
+[38] biber-darwin:340> INFO - === Mon Dec  5, 2022, 20:28:40
+[47] Biber.pm:418> INFO - Reading 'dist/transcript.bcf'
+[100] Biber.pm:975> INFO - Using all citekeys in bib section 0
+[103] Biber.pm:1051> DEBUG - Adding datalist of type 'entry' with sortingtemplate 'apa', sortingnamekeytemplatename 'apasortcite', labelprefix '', uniquenametemplate 'global', labelalphanametemplate 'global' and name 'apa/apasortcite//global/global' for section 0
+[106] Biber.pm:1051> DEBUG - Adding datalist of type 'entry' with sortingtemplate 'apa', sortingnamekeytemplatename 'global', labelprefix '', uniquenametemplate 'global', labelalphanametemplate 'global' and name 'apa/global//global/global' for section 0
+[111] Biber.pm:4401> INFO - Processing section 0
+[111] Biber.pm:4515> DEBUG - Looking for directly cited keys: 
+[118] Biber.pm:4592> INFO - Looking for bibtex file './references/bibliography.bib' for section 0
+[118] bibtex.pm:181> DEBUG - Caching data for BibTeX format file './references/bibliography.bib' for section 0
+[118] bibtex.pm:1662> DEBUG - File 'bibliography.bib' is converted to UTF8 as '/var/folders/35/hfprpjbj3wg63hw_85mdyydr0000gn/T/biber_tmp_F4zN/f4d088b3f9f145b5c3058da33afd57d4_38329.utf8'
+[119] bibtex.pm:1713> INFO - LaTeX decoding ...
+[120] bibtex.pm:1518> INFO - Found BibTeX data source './references/bibliography.bib'
+[120] bibtex.pm:1632> DEBUG - Cached Text::BibTeX entry for key 'test' from BibTeX file './references/bibliography.bib'
+[120] bibtex.pm:193> DEBUG - All citekeys will be used for section '0'
+[120] bibtex.pm:554> DEBUG - Source mapping (type=style, key=test): Entry type is 'misc' but map wants 'reference', skipping step ...
+[120] bibtex.pm:554> DEBUG - Source mapping (type=style, key=test): Entry type is 'misc' but map wants 'inreference', skipping step ...
+[120] bibtex.pm:554> DEBUG - Source mapping (type=style, key=test): Entry type is 'misc' but map wants 'collection', skipping step ...
+[120] bibtex.pm:554> DEBUG - Source mapping (type=style, key=test): Entry type is 'misc' but map wants 'incollection', skipping step ...
+[120] bibtex.pm:554> DEBUG - Source mapping (type=style, key=test): Entry type is 'misc' but map wants 'hardware', skipping step ...
+[120] bibtex.pm:713> DEBUG - Source mapping (type=style, key=test): No field 'groupauthor', skipping step ...
+[120] bibtex.pm:554> DEBUG - Source mapping (type=style, key=test): Entry type is 'misc' but map wants 'inproceedings', skipping step ...
+[120] bibtex.pm:706> DEBUG - Source mapping (type=style, key=test): No field 'year' and step has 'final' set, skipping rest of map ...
+[120] bibtex.pm:849> DEBUG - Source mapping (type=style, key=test): Deleting field 'pubstate'
+[120] bibtex.pm:706> DEBUG - Source mapping (type=style, key=test): No field 'publisher' and step has 'final' set, skipping rest of map ...
+[120] bibtex.pm:849> DEBUG - Source mapping (type=driver, key=test): Deleting field 'day'
+[120] bibtex.pm:554> DEBUG - Source mapping (type=driver, key=test): Entry type is 'misc' but map wants 'conference', skipping step ...
+[120] bibtex.pm:554> DEBUG - Source mapping (type=driver, key=test): Entry type is 'misc' but map wants 'electronic', skipping step ...
+[120] bibtex.pm:554> DEBUG - Source mapping (type=driver, key=test): Entry type is 'misc' but map wants 'www', skipping step ...
+[120] bibtex.pm:547> DEBUG - Source mapping (type=driver, key=test): Entry type is 'misc' but map wants 'mastersthesis' and step has 'final' set, skipping rest of map ...
+[121] bibtex.pm:547> DEBUG - Source mapping (type=driver, key=test): Entry type is 'misc' but map wants 'phdthesis' and step has 'final' set, skipping rest of map ...
+[121] bibtex.pm:547> DEBUG - Source mapping (type=driver, key=test): Entry type is 'misc' but map wants 'techreport' and step has 'final' set, skipping rest of map ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'hyphenation', skipping step ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'address', skipping step ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'school', skipping step ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'annote', skipping step ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'archiveprefix', skipping step ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'journal', skipping step ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'primaryclass', skipping step ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'key', skipping step ...
+[121] bibtex.pm:713> DEBUG - Source mapping (type=driver, key=test): No field 'pdf', skipping step ...
+[121] bibtex.pm:950> DEBUG - Creating biber Entry object with key 'test'
+[135] bibtex.pm:996> DEBUG - Adding entry with key 'test' to entry list
+[136] bibtex.pm:224> DEBUG - Added all citekeys to section '0': test
+[136] bibtex.pm:231> DEBUG - Added dynamic sets to section '0': 
+[136] Biber.pm:4599> DEBUG - Directly cited keys not found for section '0': 
+[136] Biber.pm:4609> DEBUG - Building dependents for keys: test
+[136] Biber.pm:4619> DEBUG - Citekeys for section '0' after fetching data: test
+[136] Biber.pm:1342> DEBUG - Creating dynamic entries (sets/related) for section 0
+[136] Biber.pm:1404> DEBUG - Resolving XDATA for section 0
+[136] Biber.pm:1432> DEBUG - Adding set members to citekeys for section 0
+[136] Biber.pm:1500> DEBUG - Recording set information
+[136] Biber.pm:1542> DEBUG - Calculating explicit and implicit xref/crossrefs for section 0
+[136] Biber.pm:1625> DEBUG - Processing explicit and implicit xref/crossrefs for section 0
+[136] Biber.pm:1929> DEBUG - Processing static entry information in section 0
+[136] Biber.pm:2725> DEBUG - labeltitle information of entry test is unset
+[136] Biber.pm:3039> DEBUG - Populated datalist 'apa/apasortcite//global/global' of type 'entry' with attributes 'apa/apasortcite//global/global' in section 0 with keys: test
+[136] Biber.pm:1966> DEBUG - Processing entries in section 0 (before uniqueness)
+[136] Biber.pm:1735> DEBUG - Processing names in entries in section 0 to generate disambiguation data
+[136] Biber.pm:1996> DEBUG - Finished processing entries in section 0 (before uniqueness)
+[136] Biber.pm:3311> DEBUG - Entering uniquename processing
+[136] Biber.pm:3324> DEBUG - Entering uniquelist processing
+[137] Biber.pm:3311> DEBUG - Entering uniquename processing
+[137] Biber.pm:2834> DEBUG - Postprocessing visible names for section 0
+[137] Biber.pm:2015> DEBUG - Postprocessing entries in section 0 (after uniqueness)
+[137] Biber.pm:1735> DEBUG - Processing names in entries in section 0 to generate disambiguation data
+[137] Biber.pm:2052> DEBUG - Finished processing entries in section 0 (after uniqueness)
+[137] Biber.pm:2070> DEBUG - Final processing for entries in section 0
+[138] Internals.pm:1157> DEBUG - Sorting object for key 'test' -> ["mm", "", "PrillwitzRobin", "", 2022, 12, 5, "\\;Vorlage", 0]
+[138] Biber.pm:4176> DEBUG - Sorting is by default case-SENSITIVE
+[138] Biber.pm:4182> DEBUG - Keys before sort:
+[138] Biber.pm:4184> DEBUG - test => mm,,PrillwitzRobin,,2022,12,5,\;Vorlage,0
+[138] Biber.pm:4198> DEBUG - Locale for sorting is 'en_US'
+[141] UCollate.pm:56> DEBUG - Collation options: (
+  "variable",
+  "non-ignorable",
+  "level",
+  4,
+  "upper_before_lower",
+  1,
+  "normalization",
+  "prenormalized",
+)
+[141] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[141] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[141] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en_US'
+[141] Biber.pm:4222> DEBUG - Sorting with Unicode::Collate (normalization => prenormalized, upper_before_lower => 1, level => 4, variable => non-ignorable, UCA version: 13.0.0, Locale: default)
+[141] Biber.pm:4227> INFO - No sort tailoring available for locale 'en_US'
+[142] Biber.pm:4326> DEBUG - Keys after sort:
+[142] Biber.pm:4328> DEBUG - test => mm,,PrillwitzRobin,,2022,12,5,\;Vorlage,0
+[142] Biber.pm:3039> DEBUG - Populated datalist 'apa/global//global/global' of type 'entry' with attributes 'apa/global//global/global' in section 0 with keys: test
+[142] Biber.pm:1966> DEBUG - Processing entries in section 0 (before uniqueness)
+[142] Biber.pm:1735> DEBUG - Processing names in entries in section 0 to generate disambiguation data
+[142] Biber.pm:1996> DEBUG - Finished processing entries in section 0 (before uniqueness)
+[142] Biber.pm:3311> DEBUG - Entering uniquename processing
+[142] Biber.pm:3324> DEBUG - Entering uniquelist processing
+[142] Biber.pm:3311> DEBUG - Entering uniquename processing
+[142] Biber.pm:2834> DEBUG - Postprocessing visible names for section 0
+[142] Biber.pm:2015> DEBUG - Postprocessing entries in section 0 (after uniqueness)
+[143] Biber.pm:1735> DEBUG - Processing names in entries in section 0 to generate disambiguation data
+[143] Biber.pm:2052> DEBUG - Finished processing entries in section 0 (after uniqueness)
+[143] Biber.pm:2070> DEBUG - Final processing for entries in section 0
+[143] Internals.pm:1157> DEBUG - Sorting object for key 'test' -> ["mm", "", "PrillwitzRobin", "", 2022, 12, 5, "\\;Vorlage", 0]
+[143] Biber.pm:4176> DEBUG - Sorting is by default case-SENSITIVE
+[143] Biber.pm:4182> DEBUG - Keys before sort:
+[143] Biber.pm:4184> DEBUG - test => mm,,PrillwitzRobin,,2022,12,5,\;Vorlage,0
+[143] Biber.pm:4198> DEBUG - Locale for sorting is 'en_US'
+[146] UCollate.pm:56> DEBUG - Collation options: (
+  "upper_before_lower",
+  1,
+  "level",
+  4,
+  "normalization",
+  "prenormalized",
+  "variable",
+  "non-ignorable",
+)
+[146] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[146] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[146] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en_US'
+[146] Biber.pm:4222> DEBUG - Sorting with Unicode::Collate (normalization => prenormalized, upper_before_lower => 1, level => 4, variable => non-ignorable, UCA version: 13.0.0, Locale: default)
+[146] Biber.pm:4227> INFO - No sort tailoring available for locale 'en_US'
+[147] Biber.pm:4326> DEBUG - Keys after sort:
+[147] Biber.pm:4328> DEBUG - test => mm,,PrillwitzRobin,,2022,12,5,\;Vorlage,0
+[150] bbl.pm:650> DEBUG - Preparing final output using class Biber::Output::bbl...
+[150] bbl.pm:654> INFO - Writing 'dist/transcript.bbl' with encoding 'UTF-8'
+[150] bbl.pm:660> DEBUG - Writing entries for section 0
+[150] bbl.pm:692> DEBUG - Writing entries in 'apa/apasortcite//global/global' list of type 'entry'
+[150] bbl.pm:700> DEBUG - Writing entry for key 'test'
+[150] bbl.pm:692> DEBUG - Writing entries in 'apa/global//global/global' list of type 'entry'
+[150] bbl.pm:700> DEBUG - Writing entry for key 'test'
+[151] bbl.pm:757> INFO - Output to dist/transcript.bbl
