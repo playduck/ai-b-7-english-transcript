@@ -14,14 +14,25 @@
 \usepackage{setspace} % line spacing
 \usepackage[stretch=10]{microtype} % micro type adjustments
 \usepackage{csquotes} % quotations
+\usepackage[useregional]{datetime2} % printing dates
+\usepackage{subcaption}
 
+\input{./src/preamble/colors.tex}
 \input{./src/preamble/setup.tex}
 \input{./src/preamble/bibliography.tex}
 \input{./src/preamble/fonts.tex}
 \input{./src/preamble/meta.tex}
 
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usetikzlibrary{intersections}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+
 \usepackage[hidelinks]{hyperref}
 \urlstyle{tt}
+
+\newcommand{\asterism}{\begin{center}$ {\ast}\,{\ast}\,{\ast} $\end{center}}
 
 \KOMAoptions{
   mpinclude=false,

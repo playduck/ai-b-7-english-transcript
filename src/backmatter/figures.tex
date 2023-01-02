@@ -1,0 +1,141 @@
+
+\begin{figure}[h]
+    \centering
+    \caption[]{Noise-spectrum with and without noise-shaping.}
+    \begin{subfigure}{6cm}
+        \centering
+        \caption{without noise-shaping}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel=$f$,
+                ylabel=$A$,
+                ticks=none,
+                width=6cm,
+                xmin=0,
+                xmax=1,
+                ymin=0,
+                ymax=1.2,
+            ]
+            \draw[pattern color=THDDarkRed, pattern=north east lines] (axis cs:0,0.4) -- (axis cs:0.52,0.4) -- (axis cs:0.6,0) -- (axis cs:0,0) -- cycle;
+            \draw[very thick, THDDarkRed] (axis cs:0,0.4) -- (axis cs:1,0.4);
+            \draw[very thick, THDGreen] (axis cs:0,1) -- (axis cs:0.4,1) -- (axis cs:0.6,0);
+            \node[circle, fill=white, , inner sep=1pt] at (axis cs: 0.3, 0.2) {$A_1$};
+            \node[circle, fill=white, inner sep=1pt] at (axis cs: 0.8, 0.2) {$B_1$};
+            \node[anchor=south east] at (axis cs:0.4,1) {\textcolor{THDGreen}{Signal}};
+            \node[anchor=south east] at (axis cs:0.4,0.4) {\textcolor{THDDarkRed}{Noise}};
+            \end{axis}
+        \end{tikzpicture}
+    \end{subfigure}
+    %
+    \textrightarrow
+    %
+    \begin{subfigure}{6cm}
+        \centering
+        \caption{with noise-shaping}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel=$f$,
+                ylabel=$A$,
+                ticks=none,
+                width=6cm,
+                xmin=0,
+                xmax=1,
+                ymin=0,
+                ymax=1.2,
+            ]
+            \draw[pattern color=THDDarkRed, smooth, pattern=north east lines] (axis cs:0,0.1) .. controls (axis cs:0.3,0.1) and (axis cs:0.4,0.28) .. (axis cs:0.53,0.36) -- (axis cs:0.6,0) -- (axis cs:0,0) -- (axis cs:0,0.1) -- cycle;
+            \draw[very thick, THDDarkRed, smooth] (axis cs:0,0.1) .. controls (axis cs:0.5,0.1) and (axis cs:0.8,0.8) .. (axis cs:1,0.8) node[pos=0.7, above, sloped, text width=2cm, align=center] {\textcolor{THDDarkRed}{shaped Noised}};
+            \draw[very thick, THDGreen] (axis cs:0,1) -- (axis cs:0.4,1) -- (axis cs:0.6,0);
+            \node[circle, fill=white, inner sep=1pt] at (axis cs: 0.45, 0.125) {$A_2$};
+            \node[circle, fill=white, inner sep=1pt] at (axis cs: 0.8, 0.4) {$B_2$};
+            \node[anchor=south east] at (axis cs:0.4,1) {\textcolor{THDGreen}{Signal}};
+            \end{axis}
+        \end{tikzpicture}
+        \label{fig:shaped-noise}
+    \end{subfigure}
+    \label{fig:noise-shaping-spectrum}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \caption{Fourier Transforms of different signals.}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \caption{DFT of the original signal.}
+        \begin{tikzpicture}
+        \begin{axis}[
+            axis lines=middle,
+            width=10cm,
+            height=6cm,
+            xlabel=$\omega$,
+            xticklabels=\empty,
+            ylabel=$A$,
+            domain=0:2,
+            ymin=0,
+            ymax=1
+        ]
+        \addplot[
+            name path=f,
+            samples=500,
+            color=THDStrongBlue,
+            very thick,
+            domain=0:2
+            ] (x,{ (rand/100) + (34*cos(deg(2 * pi * x^2))^20 * e^(-5*(x)) ) });
+        \end{axis}
+        \end{tikzpicture}
+        \label{fig:orig}
+    \end{subfigure}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \caption{DFT of the quantized signal.}
+        \begin{tikzpicture}
+        \begin{axis}[
+            axis lines=middle,
+            width=10cm,
+            height=6cm,
+            xlabel=$\omega$,
+            xticklabels=\empty,
+            ylabel=$A$,
+            domain=0:2,
+            ymin=0,
+            ymax=1
+        ]
+        \addplot[
+            name path=f,
+            samples=500,
+            color=THDDarkRed,
+            very thick,
+            domain=0:2
+            ] (x,{ (rand/100) + (2*cos(deg(2 * pi * x^2))^20 * e^(-1*(x)) ) });
+        \end{axis}
+        \end{tikzpicture}
+        \label{fig:quant}
+    \end{subfigure}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \caption{DFT of the dithered signal.}
+        \begin{tikzpicture}
+        \begin{axis}[
+            axis lines=middle,
+            width=10cm,
+            height=6cm,
+            xlabel=$\omega$,
+            xticklabels=\empty,
+            ylabel=$A$,
+            domain=0:2,
+            ymin=0,
+            ymax=1
+        ]
+        \addplot[
+            name path=f,
+            samples=500,
+            color=THDGreen,
+            very thick,
+            domain=0:2
+            ] (x,{ (rand/20 + 0.1) + (8*cos(deg(2 * pi * x^2))^20 * e^(-3*(x)) ) });
+        \end{axis}
+        \end{tikzpicture}
+        \label{fig:dithered}
+    \end{subfigure}
+    \label{fig:dfts}
+\end{figure}
