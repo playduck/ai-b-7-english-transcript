@@ -28,7 +28,8 @@ All technical sources from the presentation are from
     But now there's a slight problem:
     How do you go from the digital domain to the analog domain? Any ideas?
     \begin{verse}
-        How about a digital to analog converter?
+        \enquote{%
+        How about a digital to analog converter?}
     \end{verse}
     Correct we need a DAC (digital to analog converter).
     Now this setup is pretty ubiquitous.
@@ -42,26 +43,28 @@ All technical sources from the presentation are from
 
 \asterism
 
-\enquote{Let's take a look at these signals discrete Fourier-Transform in the frequency domain\footnote{This is in reference to \autoref{fig:orig}.}.
+\enquote{Let's take a look at these signals discrete Fourier-Transform in the frequency domain\footnote{This is in reference to \autoref{fig:orig} in the Appendix.}.
     On the X-Axis we have our frequency -- not numbered, this is just an example.
     The Y-Axis, again, represents the amplitude.
     The first signal, the 32-Bit one, looks pretty nice:
     There are some artifacts of the transformation up here, but we can ignore those.
     We have this nice bump in here, which represents our fundamental frequency -- the sine wave.
-    Let's take a look at the quantized version\footnote{In reference to \autoref{fig:quant}.}.
+    Let's take a look at the quantized version\footnote{In reference to \autoref{fig:quant} in the Appendix.}.
     It looks good up to the fundamental, but then -- what is all this mess up here?
     This is the distortion which introduces harmonic overtones.
 }
 
 \asterism
 
-\enquote{\vspace{-12pt}\begin{verse}
-        \texttt{\ldots What if we take the noise and \textit{push} it somewhere else? --- }\\
-        \texttt{That idea might just be crazy enough\ldots} \footnote{
-            Text in \texttt{monospace} is audio from a video interlude used to reveal the key idea of noise-shaping.}\\
-    \end{verse}
+\vspace{8pt}
+\begin{verse}
+    \enquote{\texttt{\ldots What if we take the noise and \textit{push} it somewhere else? --- }}\\
+    \enquote{\texttt{That idea might just be crazy enough\ldots}} \footnote{
+        Text in \texttt{monospace} is audio from a video interlude used to reveal the key idea of noise-shaping.}\\
+\end{verse}
+\enquote{%
     \ldots to actually work.
-    So picture this, X-Axis, again, the frequency and Y the amplitude \footnote{This is in reference to \autoref{fig:noise-shaping-spectrum}}.
+    So picture this, X-Axis, again, the frequency and Y the amplitude \footnote{This is in reference to \autoref{fig:noise-shaping-spectrum} in the Appendix}.
     This green area shows the area of the signal we're interested in.
     The red one shows the noise.
     So what if instead of having this uniform noise floor, where there's equal amounts of noise at every frequency, we just \textit{push} the noise somewhere else.
